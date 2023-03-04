@@ -1,0 +1,40 @@
+:root {
+  --primary-color: #bbd8ec;
+  --card: #1b1a1d;
+  --bg-color: #101014;
+}
+
+* {
+  -webkit-box-orient: vertical;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+body {
+  padding: 1rem;
+  background-color: var(--bg-color);
+}
+
+/* custom scroll */
+
+@media screen and (min-width: 768px) {
+  ::-webkit-scrollbar {
+    width: 5px;
+    height: 7.5px;
+    border-radius: 15px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 5px;
+  }
+}
