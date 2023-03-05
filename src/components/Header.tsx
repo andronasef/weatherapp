@@ -1,3 +1,5 @@
+import WeatherSearchBox from './WeatherSearchBox';
+
 function Header(props: any) {
   const currentLocation = props;
   function handleSearch(e: any) {
@@ -21,7 +23,7 @@ function Header(props: any) {
           })}
         </div>
       </div>
-      <input type="search" placeholder="Search" onKeyDown={handleSearch} />
+      <WeatherSearchBox handleSearch={handleSearch} />
     </header>
   );
 }
