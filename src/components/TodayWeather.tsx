@@ -22,7 +22,7 @@ function TodayWeather(todayWeather: any) {
                 <div className="data">
                   <div className="time">{time}</div>
                   <div className="temp">
-                    {parseFloat(hourWeather.temp_c).toFixed(0)}
+                    {parseFloat(hourWeather.temp_c).toFixed(1)}
                     <sup>°</sup>
                   </div>
                   <div className="condition">{hourWeather.condition.text}</div>
