@@ -69,6 +69,7 @@ header .info {
 }
 
 .weathercard {
+  box-sizing: content-box;
   position: relative;
   padding: 3.5rem;
   border-radius: 10px;
