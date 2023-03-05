@@ -16,11 +16,11 @@ function NextDaysWeather(nextDaysWeatherData: any) {
                 <div className="weathercard">
                   <div className="minmaxtemp">
                     <span>
-                      {day.maxtemp_c}
+                      {parseFloat(day.maxtemp_c).toFixed(1)}
                       <sup>°</sup>
                     </span>
                     <span className="mintemp">
-                      {day.mintemp_c}
+                      {parseFloat(day.mintemp_c).toFixed(1)}
                       <sup>°</sup>
                     </span>
                   </div>
