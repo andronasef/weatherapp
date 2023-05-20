@@ -64,11 +64,13 @@ header .info {
 }
 
 .weather-container h1 {
+  animation: slide-in-left 0.5s ease-out forwards;
   margin-left: 4%;
   font-size: 2rem;
 }
 
 .weathercard {
+  animation: slide-in 0.5s ease-out forwards;
   box-sizing: content-box;
   position: relative;
   padding: 3.5rem;
@@ -131,5 +133,33 @@ header .info {
 @media screen and (max-width: 768px) {
   .weathercard {
     width: 75%;
+  }
+}
+
+.loading-spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+@keyframes slide-in {
+  from {
+    opacity: 0;
+    transform: translateY(-3%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-in-left {
+  from {
+    opacity: 0;
+    transform: translateX(-3%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
   }
 }
