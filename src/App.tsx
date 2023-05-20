@@ -1,8 +1,9 @@
-import { useEffect, useState } from 'react';
-import { getWeatherData } from './api/api_request';
-import Header from './components/Header';
-import NextDaysWeather from './components/NextDaysWeather';
-import TodayWeather from './components/TodayWeather';
+import { useEffect, useState } from "react";
+import { getWeatherData } from "./api/api_request";
+import Header from "./components/Header";
+import NextDaysWeather from "./components/NextDaysWeather";
+import TodayWeather from "./components/TodayWeather";
+import LoadingSpinner from "./components/LoadingSpinner";
 
 function App() {
   const [weatherData, setWeather]: any = useState(null);
@@ -20,7 +21,7 @@ function App() {
   }
 
   if (!weatherData) {
-    return <h1>Loading...</h1>;
+    return <LoadingSpinner />;
   }
   return (
     <>
